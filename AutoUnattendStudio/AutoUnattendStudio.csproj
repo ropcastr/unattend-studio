@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Resources\unattend-studio.ico</ApplicationIcon>
+    <Product>Unattend Studio</Product>
+    <Title>Unattend Studio</Title>
+    <Authors>Rodrigo (@ropcastr)</Authors>
+    <Copyright>Copyright © 2026 Rodrigo (@ropcastr)</Copyright>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="optimization-catalog.json" />
+    <EmbeddedResource Include="option-translations-pt-BR.json" />
+    <Resource Include="Fonts\RecursiveSansLnrSt-Regular.otf" />
+    <Resource Include="Fonts\RecursiveSansLnrSt-SemiBold.otf" />
+    <Resource Include="Fonts\RecursiveSansLnrSt-Bold.otf" />
+    <Resource Include="Resources\unattend-studio.ico" />
+    <Content Include="Fonts\Recursive-OFL.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
